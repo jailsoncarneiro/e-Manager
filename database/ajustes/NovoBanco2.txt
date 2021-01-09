@@ -1,0 +1,15 @@
+update produtos p
+set p.est = -(select sum(ci.qtd)
+            from tbcomitens ci
+                 inner join tbcom c on c.id = ci.fk
+            Where ci.iditem = p.id_produto and c.op = 1)
+where p.descricao like '%TOALHA%'
+
+
+
+update produtos p
+set p.est = p.est + (select sum(ci.qtd)
+            from tbcomitens ci
+                 inner join tbcom c on c.id = ci.fk
+            Where ci.iditem = p.id_produto and c.op = 4)
+where p.descricao like '%TOALHA%'

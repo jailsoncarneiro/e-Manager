@@ -1,0 +1,77 @@
+Alterações Novo Banco de Dados da Loja
+
+**Chaves Estrangeiras**
+
+*Tabela Agendas_Chats
+ALTER TABLE `agendas` ADD CONSTRAINT `fk_agendas_idrem` FOREIGN KEY (`idrem`) REFERENCES `cads`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `agendas` ADD CONSTRAINT `fk_agendas_iddest` FOREIGN KEY (`iddest`) REFERENCES `cads`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+ALTER TABLE `agendas` ADD CONSTRAINT `fk_agendas_idcad` FOREIGN KEY (`idcad`) REFERENCES `cads`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+
+*Tabela Agendas_Chats
+ALTER TABLE `agendas_chats` ADD CONSTRAINT `fk_agendas_chats_fk` FOREIGN KEY (`fk`) REFERENCES `agendas`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `agendas_chats` ADD CONSTRAINT `fk_agendas_chats_idrem` FOREIGN KEY (`idrem`) REFERENCES `cads`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+*Tabela Bandeiras
+ALTER TABLE `bandeiras` ADD CONSTRAINT `fk_ccors_idccor` FOREIGN KEY (`idccor`) REFERENCES `ccors`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+*Tabela Ccors
+ALTER TABLE `ccors` ADD CONSTRAINT `fk_ccors_idbanco` FOREIGN KEY (`idbanco`) REFERENCES `bancos`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+*Tabela Cads
+ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_idendent` FOREIGN KEY (`idendent`) REFERENCES `cads_ends`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_idendcob` FOREIGN KEY (`idendcob`) REFERENCES `cads_ends`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+
+
+**Delete Orfaos
+**delete from cads_ends where fk not in (select id from cads)
+
+
+*Ajustes cads
+insert into cads_end(descricao, cep, endereco, numero, compl, bairro, idcid, fk)
+select 'Correspondencia', endentcep, endentcepend, endentnum, endentcompl, endentbairro, endentidcid, id
+from cads
+where id not in (select fk from cads_ends)
+
+*Regesx email filter
+WHERE email NOT REGEXP '^[^@]+@[^@]+\.[^@]{2,}$'
+
+*Alteração de Charset e Collation
+ALTER DATABASE `sua_base` CHARSET = UTF8 COLLATE = utf8_general_ci;
+
+**Ajusta Operadoras de Telefonia
+Update cads
+Set tel1idop = null
+where tel1idop not in (select id from optels)
+
+
+** Ajusta FK's da tabela cads
+
+ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel1idop` FOREIGN KEY (`tel1idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel2idop` FOREIGN KEY (`tel2idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel1idop` FOREIGN KEY (`tel1idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel2idop` FOREIGN KEY (`tel2idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel1idop` FOREIGN KEY (`tel2idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel2idop` FOREIGN KEY (`tel2idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel2idop` FOREIGN KEY (`tel3idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel1idop` FOREIGN KEY (`tel2idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE; ALTER TABLE `cads` ADD CONSTRAINT `fk_cads_tel3idop` FOREIGN KEY (`tel3idop`) REFERENCES `optels`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+** Ajustes FKS da tabela cats_subcats
+ALTER TABLE `cats_subcats` ADD CONSTRAINT `fk_cats_subcats_idsubcat` FOREIGN KEY (`fk`) REFERENCES `cats`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+** Ajustes FKS da tabela cats_subcats_subs
+
+ALTER TABLE `cats_subcats_subs` ADD CONSTRAINT `fk_cats_subcats_subs_fk` FOREIGN KEY (`fk`) REFERENCES `cats_subcats`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+** Ajusta FK's da tabela cidades
+ALTER TABLE `cidades` ADD CONSTRAINT `fk_cidades_idestado` FOREIGN KEY (`idestado`) REFERENCES `estados`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+** Ajusta FK's da tabela estados
+ALTER TABLE `estados` ADD CONSTRAINT `fk_estados_idpais` FOREIGN KEY (`idpais`) REFERENCES `paises`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+** Ajusta FK's da tabela cads_ends
+ALTER TABLE `cads_ends` ADD CONSTRAINT `fk_cads_ends_idcid` FOREIGN KEY (`idcid`) REFERENCES `cidades`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+** Insere fabricantes na cad
+insert into cads (idman, pessoa, nome, razaosocial, apelido, email, site, fa, us, relacdesde)
+select id, 'J', nome, nome, nome, email, site, 'S', 'N', CURRENT_TIMESTAMP
+from fabricantes
+** atualiza os fabricantes da tabela items
+update items p
+set p.idfabricante = (select id from cads where idman = p.idfabricante and fa = 'S')
+where p.idfabricante is not null;
