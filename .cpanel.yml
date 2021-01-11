@@ -12,8 +12,6 @@ deployment:
     - /bin/cp -R storage $DEPLOYPATH
     - /bin/cp .editorconfig $DEPLOYPATH
     - /bin/cp .env.example $DEPLOYPATH
-    - /bin/cp .gitattributes $DEPLOYPATH
-    - /bin/cp .gitignore $DEPLOYPATH
     - /bin/cp .styleci.yml $DEPLOYPATH
     - /bin/cp artisan $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
