@@ -17,6 +17,7 @@ class CreateFormapagtosTable extends Migration
             $table->bigIncrements('id');
             $table->string('descricao', 30);
             $table->text('img')->nullable();
+            $table->timestamps();
         });
     }
 

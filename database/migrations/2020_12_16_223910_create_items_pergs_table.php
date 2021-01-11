@@ -30,6 +30,7 @@ class CreateItemsPergsTable extends Migration
             $table->timestamp('dataavresp')->nullable();
             $table->char('bloqueado', 1)->default('N');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

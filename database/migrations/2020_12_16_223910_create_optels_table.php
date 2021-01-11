@@ -17,6 +17,7 @@ class CreateOptelsTable extends Migration
             $table->tinyIncrements('id');
             $table->string('operadora', 20);
             $table->unsignedTinyInteger('codddd');
+            $table->timestamps();
         });
     }
 

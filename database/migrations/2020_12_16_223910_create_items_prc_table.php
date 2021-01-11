@@ -18,6 +18,7 @@ class CreateItemsPrcTable extends Migration
             $table->decimal('qtd', 10)->unsigned();
             $table->decimal('preco', 10)->unsigned();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

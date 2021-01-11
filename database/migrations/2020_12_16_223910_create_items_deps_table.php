@@ -20,6 +20,7 @@ class CreateItemsDepsTable extends Migration
             $table->unsignedTinyInteger('nota');
             $table->char('bloq', 1)->default('N');
             $table->unsignedBigInteger('fk')->index('fk_items_deps_fk');
+            $table->timestamps();
         });
     }
 

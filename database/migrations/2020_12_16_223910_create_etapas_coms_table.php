@@ -19,6 +19,7 @@ class CreateEtapasComsTable extends Migration
             $table->string('etapa', 30);
             $table->string('ordem', 20);
             $table->text('observacoes')->nullable();
+            $table->timestamps();
         });
     }
 

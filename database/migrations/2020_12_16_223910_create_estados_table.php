@@ -18,6 +18,7 @@ class CreateEstadosTable extends Migration
             $table->string('nome');
             $table->char('sigla', 2);
             $table->unsignedTinyInteger('idpais')->index('fk_estados_idpais');
+            $table->timestamps();
         });
     }
 

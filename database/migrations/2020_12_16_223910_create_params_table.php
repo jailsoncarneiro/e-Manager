@@ -107,6 +107,7 @@ class CreateParamsTable extends Migration
             $table->string('ft_cnt_slv', 100)->nullable();
             $table->string('ft_cnt_stt', 100)->nullable();
             $table->string('pastaadmin', 20)->nullable();
+            $table->timestamps();
         });
     }
 

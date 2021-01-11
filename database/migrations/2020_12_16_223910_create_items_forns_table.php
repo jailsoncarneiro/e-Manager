@@ -22,6 +22,7 @@ class CreateItemsFornsTable extends Migration
             $table->char('cotacao', 1)->nullable()->default('N');
             $table->string('obs', 100)->nullable();
             $table->bigInteger('fk');
+            $table->timestamps();
         });
     }
 

@@ -23,6 +23,7 @@ class CreateItemsCompsTable extends Migration
             $table->decimal('valor', 10, 4)->unsigned();
             $table->char('baixaaut', 1)->default('S');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

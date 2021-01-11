@@ -20,6 +20,7 @@ class CreateStatuscomsTable extends Migration
             $table->char('est', 1);
             $table->char('fin', 1);
             $table->string('obs', 100);
+            $table->timestamps();
         });
     }
 

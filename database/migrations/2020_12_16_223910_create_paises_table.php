@@ -21,6 +21,7 @@ class CreatePaisesTable extends Migration
             $table->char('sigla', 2)->nullable();
             $table->char('moeda', 3)->nullable();
             $table->string('moedasimbolo', 3)->nullable();
+            $table->timestamps();
         });
     }
 

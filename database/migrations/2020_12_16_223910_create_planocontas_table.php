@@ -20,6 +20,7 @@ class CreatePlanocontasTable extends Migration
             $table->string('conta', 100);
             $table->char('tipo', 1);
             $table->char('sian', 1);
+            $table->timestamps();
         });
     }
 

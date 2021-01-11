@@ -18,6 +18,7 @@ class CreateItemsImgsTable extends Migration
             $table->unsignedTinyInteger('pos');
             $table->string('caminho', 240);
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

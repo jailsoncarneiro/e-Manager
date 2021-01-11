@@ -24,6 +24,7 @@ class CreateSlidersTable extends Migration
             $table->string('link', 300)->nullable();
             $table->char('tipo', 1);
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

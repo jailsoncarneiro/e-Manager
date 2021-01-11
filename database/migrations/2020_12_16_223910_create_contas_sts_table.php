@@ -23,6 +23,7 @@ class CreateContasStsTable extends Migration
             $table->unsignedBigInteger('idresp');
             $table->string('obs')->nullable();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

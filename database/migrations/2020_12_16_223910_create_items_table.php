@@ -55,6 +55,7 @@ class CreateItemsTable extends Migration
             $table->char('defpreco', 1)->nullable();
             $table->char('defqtd', 1)->nullable();
             $table->decimal('qtdpadrao')->unsigned()->nullable();
+            $table->timestamps();
         });
     }
 

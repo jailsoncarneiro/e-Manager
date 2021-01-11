@@ -46,6 +46,7 @@ class CreateContasTable extends Migration
             $table->string('observacoes', 100)->nullable();
             $table->unsignedBigInteger('fks');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 
