@@ -20,6 +20,7 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
 
     protected $table = 'cads';
+    protected $primaryKey = 'id';
 
     /**
      * The attributes that are mass assignable.
