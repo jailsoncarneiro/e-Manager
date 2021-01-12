@@ -30,19 +30,19 @@
           Usuário
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <!-- @if (Route::has('login'))
+          @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Cockpit</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Registro</a>
                         @endif
                     @endif
                 </div>
-            @endif -->
+            @endif
 
           <a class="dropdown-item" href="#"> Meus Dados</a>
           <div class="dropdown-divider"></div>
