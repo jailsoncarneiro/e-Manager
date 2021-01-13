@@ -36,7 +36,8 @@ jobs:
     - name: Deploy to production
       uses: appleboy/ssh-action@master
       with:
-        username: pacetosoftware
-        host: pacetosoftware.com.br
-        password: ${{ secrets.SSH_PASSWORD }}
+        username: ${{ secrets.USERNAME }}
+        host: ${{ secrets.HOST }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
         script: 'cd /home/pacetosoftware/repositories/e-Manager && ./server_deploy.sh'
