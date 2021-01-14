@@ -13,9 +13,12 @@ jobs:
     - uses: actions/checkout@v2
       with:
         token: ${{ secrets.PUSH_TOKEN }}
-    - uses: shivammathur/setup-php@b7d1d9c9a92d8d8463ce36d7f60da34d461724f8
+    - name: Set up Node
+      uses: actions/setup-node@v1
       with:
-        php-version: '7.3'
+        node-version: '12.x'
+    - run: npm install
+    - run: npm run production
     - name: Commit built assets
       run: |
         git config --local user.email "action@github.com"
