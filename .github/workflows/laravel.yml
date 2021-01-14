@@ -40,4 +40,4 @@ jobs:
         host: ${{ secrets.HOST }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: 'cd /home/pacetosoftware/repositories/e-Manager && ./server_deploy.sh'
+        script: 'cd /home/pacetosoftware/app/public/prodsite && ./server_deploy.sh'
