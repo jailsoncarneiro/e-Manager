@@ -73,7 +73,8 @@
                 });
 
             });    
-        </script>
+        </script>modified:   public/css/app.css
+        modified:   public/js/app.js
 
         <!-- Novo -->
     </head>
@@ -115,7 +116,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime( {{ url('ManagerSetup.exe') }})?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
@@ -162,7 +163,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime({{ url('ManagerSetup.exe') }}))?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
@@ -224,7 +225,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://pacetosoftware.com.br/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime({{ url('ManagerSetup.exe') }}))?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
