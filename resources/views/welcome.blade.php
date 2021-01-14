@@ -115,7 +115,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('https://paceto.com.br/programas/ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
@@ -162,7 +162,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('https://paceto.com.br/programas/ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
@@ -224,7 +224,7 @@
             <div class="title text-center">
                 <div class="container">
                     <div class="text-center block" style="padding-top:10px">
-                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
+                        <a class="btn-lg btn-warning" href="https://paceto.com.br/programas/ManagerSetup.exe?fv=<?php print date("dmyHis", filemtime('https://paceto.com.br/programas/ManagerSetup.exe'))?>">Baixe Agora Mesmo!</a>
                     </div>
                 </div>
             </div>  
