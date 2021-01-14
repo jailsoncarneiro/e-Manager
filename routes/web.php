@@ -26,7 +26,7 @@ Route::post('/cads/salvar', [CadController::class, 'store'])->name('cads.sto');
 
 Route::put('/cads/update/{cad}', [CadController::class, 'update'])->name('cads.upd');
 
-Route::delete('/cads/delete/{cad}', [CadController::class, 'update'])->name('cads.upd');
+Route::delete('/cads/delete/{cad}', [CadController::class, 'update'])->name('cads.del');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
