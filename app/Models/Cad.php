@@ -8,11 +8,11 @@ class Cad extends User
 {
     use HasFactory;
 
-    protected $table = 'cads';
+//    protected $table = 'cads';
 
     public function enderecos()
     {
-        return $this->hasMany('App\Models\CadEnd', 'fk', 'id');
+        return $this->hasMany('App\Models\CadsEnd', 'fk', 'id');
     }
 
     public function logs()
