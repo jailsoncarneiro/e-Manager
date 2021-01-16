@@ -19,4 +19,9 @@ class ManController extends Controller
 
         return view('monitor', ['cads' => $cads]);
     }
+
+    public function showdet(Cad $cad)
+    {        
+        return view('monitordet', ['cad'=> $cad]);
+    }
 }
