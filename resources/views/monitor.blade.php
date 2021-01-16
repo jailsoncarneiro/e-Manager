@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="alert alert-info">Monitor</div>
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped tbmonitor">
         <thead>
             <tr>
                 <th>ID</th>
@@ -19,8 +19,8 @@
         </thead>
         <tbody>
             @foreach ($cads as $cad)
-                <tr>                     
-                    <td><a href={{ url('monitor/admin', [$cad->id]) }}>{{ $cad->id }}</a></td>
+                <tr class="table-tr" data-href={{ url('monitor/admin', [$cad->id]) }}>                     
+                    <td> {{ $cad->id }}</td>
                     <td><table><tr><td>{{ $cad->nome }} </td></tr><tr><td>{{ $cad->enderecos->first()['cid']['nome'] }}</td></tr></table></td>
                     <?php $_log = $cad->logs->first();?>
                     <td>{{ $_log['sistema'] }}</td>
@@ -41,4 +41,14 @@
             </tr>
         </tfoot>
     </table>
+@endsection
+
+@section('scripts')
+<script>
+    $(function() {
+        $('table.tbmonitor').on("click", "tr.table-tr", function() {
+            window.location = $(this).data("href");
+        });
+    });
+</script>
 @endsection
