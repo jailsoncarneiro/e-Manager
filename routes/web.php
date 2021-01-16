@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CadController;
 use App\Http\Controllers\ProdutoController;
+use App\Http\Controllers\Api\ManController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,10 @@ Route::post('/cads/salvar', [CadController::class, 'store'])->name('cads.sto');
 Route::put('/cads/update/{cad}', [CadController::class, 'update'])->name('cads.upd');
 
 Route::delete('/cads/delete/{cad}', [CadController::class, 'update'])->name('cads.delete');
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+    Route::get('/monitor/{user}', [ManController::class, 'show'])->name('man.mon');
+});
+
