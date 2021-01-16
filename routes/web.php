@@ -33,5 +33,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('dashboard');
     })->name('dashboard');
     Route::get('/monitor/{user}', [ManController::class, 'show'])->name('man.mon');
+    Route::get('/monitor/{user}/{id}', [ManController::class, 'showdet'])->name('man.mondet');
 });
 
