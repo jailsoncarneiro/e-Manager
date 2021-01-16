@@ -17,7 +17,7 @@ class Cad extends User
 
     public function logs()
     {
-        return $this->hasMany('App\Models\CadsLog', 'idcad', 'id');
+        return $this->hasMany('App\Models\CadsLog', 'idcad', 'id')->orderBy('data', 'DESC');
     }
 
     // public function telefones()
