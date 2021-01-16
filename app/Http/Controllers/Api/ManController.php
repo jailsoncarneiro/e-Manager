@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Models\User;
+use App\Models\Cad;
 use App\Http\Controllers\Controller;
 
 class ManController extends Controller
@@ -12,11 +12,11 @@ class ManController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function show()
     {
-        $cads = User::all();
-        //dd($cads[0]);
+        
+        $cads = Cad::with('logs')->where('cl', 'S')->get();
 
-        return response()->json($cads);
+        return view('monitor', ['cads' => $cads]);
     }
 }

@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CadEnd extends Model
+class CadsLog extends Model
 {
     use HasFactory;
-//    protected $table = 'cads_ends';
 }
