@@ -29,6 +29,7 @@
                     <td>{{ $cad->logs->last()['pcuser'] }}</td>
                     <td>{{ $cad->logs->last()['pcname'] }}</td>
                     <td>{{ $cad->logs->last()['pclocalip'] }}</td>
+                    <td>{{ $cad->logs->last()['pcremip'] }}</td>
                     <td><span class="fi-brush"></span></td>
                 </tr>
             @endforeach
