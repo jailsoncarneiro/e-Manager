@@ -19,8 +19,8 @@
         </thead>
         <tbody>
             @foreach ($cads as $cad)
-                <tr>
-                    <td>{{ $cad->id }}</td>
+                <tr>                     
+                    <td><a href={{ url('monitor/admin', [$cad->id]) }}>{{ $cad->id }}</a></td>
                     <td>{{ $cad->nome }}</td>
                     <td>{{ $cad->sistema }}</td>
                     <td>{{ $cad->licenca }}</td>
@@ -30,7 +30,7 @@
                     <td>{{ $cad->logs->last()['pcname'] }}</td>
                     <td>{{ $cad->logs->last()['pclocalip'] }}</td>
                     <td>{{ $cad->logs->last()['pcremip'] }}</td>
-                    <td><span class="fi-brush"></span></td>
+                    <td><span class="fi-brush"></span></td>                    
                 </tr>
             @endforeach
         </tbody>
