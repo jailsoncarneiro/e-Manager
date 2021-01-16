@@ -9,4 +9,10 @@ class CadsEnd extends Model
 {
     use HasFactory;
 //    protected $table = 'cads_ends';
+
+public function cid()
+{
+    return $this->hasOne('App\Models\Cidade', 'id', 'idcid');
+}
+
 }
