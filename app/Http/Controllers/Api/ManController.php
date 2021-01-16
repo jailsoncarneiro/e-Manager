@@ -15,7 +15,7 @@ class ManController extends Controller
     public function show()
     {
         
-        $cads = Cad::with('logs')->where('cl', 'S')->get();
+        $cads = Cad::with('logs', 'enderecos')->where('cl', 'S')->get();
 
         return view('monitor', ['cads' => $cads]);
     }
@@ -23,6 +23,6 @@ class ManController extends Controller
     public function showdet(Cad $cad)
     {        
         // dd($cad->logs);
-        return view('monitordet', ['logs'=> $cad->logs]);
+        return view('monitordet', ['logs'=> $cad]);
     }
 }
