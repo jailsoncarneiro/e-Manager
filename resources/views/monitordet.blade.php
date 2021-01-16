@@ -16,10 +16,10 @@
 		  </tr>
         </thead>
         <tbody>
-            @foreach ($logs as $log)
+            @foreach ($cad->logs as $log)
                 <tr>
                     <td>{{ $log->data }}</td>
-                    <td>{{ $log->cliente }}</td>
+                    <td>{{ $log->cliente['nome'] }}</td>
                     <td>{{ $log->sistema }}</td>
                     <td>{{ $log->pcuser }}</td>
                     <td>{{ $log->cmd }}</td>

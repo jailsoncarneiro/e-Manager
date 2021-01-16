@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class CadsLog extends Model
 {
     use HasFactory;
+
+    public function cliente()
+    {
+        return $this->hasOne('App\Models\Cad', 'id', 'idcad');
+    }
+
+
 }
