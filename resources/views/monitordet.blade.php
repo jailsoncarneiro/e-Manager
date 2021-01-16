@@ -16,7 +16,7 @@
 		  </tr>
         </thead>
         <tbody>
-            @foreach ($cad->logs as $log)
+            @foreach ($logs as $log)
                 <tr>
                     <td>{{ $log->data }}</td>
                     <td>{{ $log->cliente }}</td>
