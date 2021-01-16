@@ -29,7 +29,7 @@ class AuthController extends Controller
             return response()->json(compact('token'));
         }
 
-        public function register(Request $request)
+    public function register(Request $request)
         {
                 $validator = Validator::make($request->all(), [
                 'name' => 'required|string|max:255',
@@ -52,7 +52,7 @@ class AuthController extends Controller
             return response()->json(compact('user','token'),201);
         }
 
-        public function getAuthenticatedUser()
+    public function getAuthenticatedUser()
             {
                     try {
 
