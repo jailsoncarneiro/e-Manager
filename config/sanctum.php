@@ -15,7 +15,7 @@ return [
 
     'stateful' => explode(',', env(
         'SANCTUM_STATEFUL_DOMAINS',
-        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1,local.tgcsistemas.com/laravel/emanager/public,pacetosoftware.com.br'
+        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1,local.tgcsistemas.com/laravel/emanager/public,prodsite.pacetosoftware.com.br'
     )),
 
     /*
