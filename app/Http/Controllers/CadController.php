@@ -72,30 +72,28 @@ class CadController extends Controller
 
             // dd($request);
           
-            $data = Cad::where('nome', 'LIKE', $request->nome.'%')
-                ->get();
+            $data = Cad::where('nome', 'LIKE', $request->nome.'%')->get();
            
             $output = '';
 
-            //dd($data);
-            if (count($data)>0) {
+            if (count($data) > 0) {
                 foreach ($data as $row){
                     $log = $row->logs->first();
-                    $output .= '<tr class="table-tr" data-href=' . url("monitor/admin", [$row->id]) .
-                               '  <td>' . $row->id . '</td>' .
-                               '  <td>' . $row->nome . '</td>' .
-                               '  <td>' . $log["sistema"] . '</td>' .
-                               '  <td>' . $row->lictgcman . '</td>' .
-                               '  <td>' . $row->lictgcmandatareg . '</td>' .
-                               '  <td>' . $log["data"] . '</td>' .
-                               '  <td>' . $log["pcuser"] . '</td>' .
-                               '  <td>' . $log["pcname"] . '</td>' .
-                               '  <td>' . $log["pclocalip"] . '</td>' .
-                               '  <td>' . $log["pcremip"] . '</td>' .
-                               '  <td><span class="fi-brush"></span></td>' .
-                               '</tr>';
-                }
-              
+                    $output .= "<tr class=table-tr data-href={{url('monitor/admin', [$row->id])}}>
+                                 <td> $row->id </td>
+                                 <td> $row->nome </td>
+                                 <td> $log[sistema] </td>
+                                 <td> $row->lictgcman </td>
+                                 <td> $row->lictgcmandatareg </td>
+                                 <td> $log[data] </td>
+                                 <td> $log[pcuser] </td>
+                                 <td> $log[pcname] </td>
+                                 <td> $log[pclocalip] </td>
+                                 <td> $log[pcremip] </td>
+                                 <td><span class='fi-brush'></span></td>
+                               </tr>";
+                }              
+              //dd($output);
             }
             else {
              
