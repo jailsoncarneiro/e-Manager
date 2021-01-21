@@ -105,6 +105,7 @@ class CreateComsTable extends Migration
             $table->decimal('areceber', 10)->unsigned()->nullable();
             $table->decimal('totalpago', 10)->unsigned()->nullable();
             $table->decimal('troco', 10)->unsigned()->nullable();
+            $table->timestamps();             
         });
     }
 

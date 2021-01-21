@@ -17,6 +17,7 @@ class CreateCatsSubcatsTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('idsubcat');
             $table->unsignedBigInteger('fk')->index('fk_cats_subcats_idsubcat');
+            $table->timestamps();             
         });
     }
 

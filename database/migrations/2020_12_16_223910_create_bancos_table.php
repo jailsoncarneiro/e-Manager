@@ -17,6 +17,7 @@ class CreateBancosTable extends Migration
             $table->bigIncrements('id');
             $table->char('codigo', 3);
             $table->string('banco', 100);
+            $table->timestamps();
         });
     }
 

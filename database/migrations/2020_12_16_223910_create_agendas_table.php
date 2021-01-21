@@ -36,6 +36,7 @@ class CreateAgendasTable extends Migration
             $table->char('exsab', 1)->nullable()->default('S');
             $table->char('exdom', 1)->nullable()->default('S');
             $table->char('situacao', 1);
+            $table->timestamps();
         });
     }
 

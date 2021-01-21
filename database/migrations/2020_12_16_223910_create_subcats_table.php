@@ -18,6 +18,7 @@ class CreateSubcatsTable extends Migration
             $table->string('nome', 50);
             $table->text('img')->nullable();
             $table->unsignedBigInteger('fk')->index('fk_cats_subcats_subs_fk');
+            $table->timestamps();             
         });
     }
 

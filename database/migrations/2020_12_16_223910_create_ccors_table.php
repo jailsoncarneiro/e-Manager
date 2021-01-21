@@ -27,6 +27,7 @@ class CreateCcorsTable extends Migration
             $table->unsignedBigInteger('idfilial')->nullable()->index('fk_ccors_idfilial');
             $table->unsignedBigInteger('idcad');
             $table->char('tipominimo', 1)->nullable();
+            $table->timestamps();             
         });
     }
 

@@ -18,6 +18,7 @@ class CreateBandeirasTable extends Migration
             $table->string('bandeira', 100);
             $table->decimal('percdesc')->unsigned();
             $table->unsignedBigInteger('idccor')->index('fk_bandeiras_idccor');
+            $table->timestamps();
         });
     }
 

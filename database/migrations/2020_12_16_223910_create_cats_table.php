@@ -17,6 +17,7 @@ class CreateCatsTable extends Migration
             $table->bigIncrements('id');
             $table->string('categoria', 50);
             $table->text('imagem')->nullable();
+            $table->timestamps();             
         });
     }
 

@@ -66,6 +66,45 @@ class CadController extends Controller
         return view('cads.listall');
     }
 
+    public function search(Request $request){
+        
+        if ($request->ajax()) {
+
+            // dd($request);
+          
+            $data = Cad::where('nome', 'LIKE', $request->nome.'%')
+                ->get();
+           
+            $output = '';
+           
+            if (count($data)>0) {
+                foreach ($data as $row){
+                    $log = $row->logs->first();
+                    $output .= '<tr class="table-tr" data-href=' . url("monitor/admin", [$row->id]) .
+                               '  <td>' . $row->id . '</td>' .
+                               '  <td><table><tr><td>' . $row->nome . '</td></tr><tr><td>' . $row->enderecos->first()["cid"]["nome"] . '</td></tr></table></td>' .
+                               '  <td>' . $log["sistema"] . '</td>' .
+                               '  <td>' . $row->lictgcman . '</td>' .
+                               '  <td>' . $row->lictgcmandatareg . '</td>' .
+                               '  <td>' . $log["data"] . '</td>' .
+                               '  <td>' . $log["pcuser"] . '</td>' .
+                               '  <td>' . $log["pcname"] . '</td>' .
+                               '  <td>' . $log["pclocalip"] . '</td>' .
+                               '  <td>' . $log["pcremip"] . '</td>' .
+                               '  <td><span class="fi-brush"></span></td>' .
+                               '</tr>';
+                }
+              
+            }
+            else {
+             
+                $output .= '<tr><td>Nenhum registro encontrado.</td></tr>';
+            }
+           
+            return $output;
+        }
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
