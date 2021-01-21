@@ -12,7 +12,8 @@
 			<th>Operação</th>
 			<th>Nome do PC</th>
 			<th>IP Local</th>
-			<th>IP Remoto</th>
+            <th>IP Remoto</th>
+            <th>Operaçoes</th>
 		  </tr>
         </thead>
         <tbody>

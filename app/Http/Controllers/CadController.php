@@ -76,13 +76,14 @@ class CadController extends Controller
                 ->get();
            
             $output = '';
-           
+
+            //dd($data);
             if (count($data)>0) {
                 foreach ($data as $row){
                     $log = $row->logs->first();
                     $output .= '<tr class="table-tr" data-href=' . url("monitor/admin", [$row->id]) .
                                '  <td>' . $row->id . '</td>' .
-                               '  <td><table><tr><td>' . $row->nome . '</td></tr><tr><td>' . $row->enderecos->first()["cid"]["nome"] . '</td></tr></table></td>' .
+                               '  <td>' . $row->nome . '</td>' .
                                '  <td>' . $log["sistema"] . '</td>' .
                                '  <td>' . $row->lictgcman . '</td>' .
                                '  <td>' . $row->lictgcmandatareg . '</td>' .
