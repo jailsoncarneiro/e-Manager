@@ -17,7 +17,7 @@ class ManController extends Controller
     public function show()
     {
         
-        $cads = Cad::with('logs', 'enderecos')->where('cl', 'S')->get();
+        $cads = Cad::with('logs', 'enderecos')->get();
 
         return view('monitor', ['cads' => $cads]);
     }
