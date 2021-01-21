@@ -79,7 +79,7 @@ class CadController extends Controller
             if (count($data) > 0) {
                 foreach ($data as $row){
                     $log = $row->logs->first();
-                    $output .= "<tr class=table-tr data-href={{url('monitor/admin', [$row->id])}}>
+                    $output .= "<tr class=table-tr data-href=\"{{url('monitor/admin', [$row->id])}}\">
                                  <td> $row->id </td>
                                  <td> $row->nome </td>
                                  <td> $log[sistema] </td>

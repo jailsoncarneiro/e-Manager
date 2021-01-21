@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <h1>Cadastro de Clientes!</h1>
+    <h2 class="text-center">Cadastro de Clientes</h2>
     <table class="table table-hover table-striped">
         <thead>
             <tr>
