@@ -19,6 +19,7 @@ class CreateCidadesTable extends Migration
             $table->string('gentilico')->nullable();
             $table->unsignedBigInteger('codibge')->nullable();
             $table->unsignedBigInteger('idestado')->index('fk_cidades_idestado');
+            $table->timestamps();             
         });
     }
 

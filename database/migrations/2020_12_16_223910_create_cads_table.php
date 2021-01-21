@@ -14,7 +14,7 @@ class CreateCadsTable extends Migration
     public function up()
     {
         Schema::create('cads', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
             $table->unsignedBigInteger('idman')->nullable();
             $table->string('codigo', 20)->nullable();
             $table->char('pessoa', 1)->nullable();

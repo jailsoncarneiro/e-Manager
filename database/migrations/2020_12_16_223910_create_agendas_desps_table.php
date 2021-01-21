@@ -15,11 +15,11 @@ class CreateAgendasDespsTable extends Migration
     {
         Schema::create('agendas_desps', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->dateTime('data');
             $table->decimal('valor', 10)->unsigned();
             $table->char('formapagto', 2);
             $table->mediumText('historico');
             $table->unsignedBigInteger('fk')->index('fk_agendas_desps_fk');
+            $table->timestamps();
         });
     }
 

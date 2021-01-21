@@ -39,14 +39,15 @@ class CreateComsFatsTable extends Migration
             $table->decimal('totalfrete')->unsigned();
             $table->timestamp('preventrega')->useCurrent();
             $table->string('observacoes');
-            $table->timestamp('dataaprovacao')->default('0000-00-00 00:00:00');
+            $table->timestamp('dataaprovacao')->nullable();
             $table->unsignedBigInteger('idrespaprovacao');
             $table->char('gerafin', 1);
-            $table->timestamp('datasaida')->default('0000-00-00 00:00:00');
+            $table->timestamp('datasaida')->nullable();
             $table->unsignedBigInteger('idrespsaida');
-            $table->timestamp('dataentrega')->default('0000-00-00 00:00:00');
+            $table->timestamp('dataentrega')->nullable();
             $table->unsignedBigInteger('idrespentrega');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

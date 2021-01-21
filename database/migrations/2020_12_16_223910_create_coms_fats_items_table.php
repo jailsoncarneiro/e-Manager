@@ -70,6 +70,7 @@ class CreateComsFatsItemsTable extends Migration
             $table->decimal('percmc', 10)->unsigned()->nullable();
             $table->decimal('mc', 10)->unsigned()->nullable();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

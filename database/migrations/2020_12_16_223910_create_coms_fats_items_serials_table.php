@@ -17,6 +17,7 @@ class CreateComsFatsItemsSerialsTable extends Migration
             $table->bigIncrements('id');
             $table->string('serial');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

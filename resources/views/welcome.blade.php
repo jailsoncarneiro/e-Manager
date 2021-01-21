@@ -10,11 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Novo -->
- 		<link rel="icon" href="img/favicon-16.png" sizes="16x16">
-		<link rel="icon" href="img/favicon-32.png" sizes="32x32">
         <!-- Latest compiled and minified CSS & JS -->
         <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-        <link href="css/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mb-comingsoon.css">
@@ -102,7 +99,7 @@
                               <img class="img-responsive" src="img/telas/TelaLocacaoVenda.jpg" style="width:100%"/>
                         </div>
                         <div class="col-md-4 col-lg-4">
-                            <p><img src="https://paceto.com.br/img/layout/logo/logo.jpg" alt="" class="img-responsive"/></p>
+                            <p><img src="https://paceto.com.br/painel/img/layout/logo/logo.jpg" alt="" class="img-responsive"/></p>
                             <ul class="info-top-2">
                                 <li><span class="underline">O Melhor</span> Sistema de Gerenciamento para seu negócio</li>
                                 <li><span class="color">Controle seu negócio</span> com facilidade!</li>

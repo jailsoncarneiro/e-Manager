@@ -19,6 +19,7 @@ class CreateContasCatsTable extends Migration
             $table->unsignedBigInteger('idccusto');
             $table->decimal('valor', 10)->unsigned();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

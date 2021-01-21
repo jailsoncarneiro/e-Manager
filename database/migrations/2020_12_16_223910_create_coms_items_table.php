@@ -55,6 +55,7 @@ class CreateComsItemsTable extends Migration
             $table->dateTime('datastatus')->nullable();
             $table->string('obs', 200)->nullable();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

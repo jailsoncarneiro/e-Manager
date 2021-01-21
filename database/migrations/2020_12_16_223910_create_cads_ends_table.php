@@ -23,6 +23,7 @@ class CreateCadsEndsTable extends Migration
             $table->string('bairro', 40)->nullable();
             $table->unsignedBigInteger('idcid')->nullable()->index('fk_cads_ends_idcid');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();
         });
     }
 

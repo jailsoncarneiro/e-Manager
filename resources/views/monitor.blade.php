@@ -1,7 +1,17 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="alert alert-info">Monitor</div>
+    <h3 class="text-center">Monitor</h3>
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">                    
+                <div id="clientes_list"></div>                    
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
     <table class="table table-hover table-striped tbmonitor">
         <thead>
             <tr>
@@ -17,7 +27,7 @@
                 <th>IP Remoto</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tbodyclientes">
             @foreach ($cads as $cad)
                 <tr class="table-tr" data-href={{ url('monitor/admin', [$cad->id]) }}>                     
                     <td> {{ $cad->id }}</td>

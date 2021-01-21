@@ -30,6 +30,7 @@ class CreateContasPagsTable extends Migration
             $table->decimal('totalpago', 10)->unsigned();
             $table->decimal('troco')->unsigned();
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

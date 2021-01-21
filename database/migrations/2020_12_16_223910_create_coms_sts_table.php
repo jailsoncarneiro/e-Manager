@@ -20,6 +20,7 @@ class CreateComsStsTable extends Migration
             $table->string('obs', 240)->nullable();
             $table->unsignedBigInteger('idresp');
             $table->unsignedBigInteger('fk');
+            $table->timestamps();             
         });
     }
 

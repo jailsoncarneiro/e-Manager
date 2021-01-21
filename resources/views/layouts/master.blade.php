@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
 
-    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ URL::to('src/css/app.css') }}" crossorigin="anonymous">
 
-    <link rel="canonical" href="https://local.tgcsistemas.com/laravel/emanager/public" /> --}}
+    <link rel="canonical" href="https://local.tgcsistemas.com/laravel/emanager/public" /> 
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
@@ -64,23 +64,7 @@
       </div>
     @endif
 
-	<script src="{{ asset('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
-	<script src="{{ asset('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
-	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.flexslider.js') }}"></script>
-	<script src="{{ asset('assets/js/chosen.jquery.min.js') }}"></script>
-	<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countdown.min.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.sticky.js') }}"></script>
-	<script src="{{ asset('assets/js/functions.js') }}"></script>
-
-    {{-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script>
-        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
-
-    </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
@@ -93,9 +77,30 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
         feather.replace()
-
     </script>
+    <script>
+      $(document).ready(function () {
+        $('#inp-search').on('keyup',function() {
+            var query = $(this).val(); 
+            $.ajax({
+            
+                url:"{{ route('man.monsearch', 'admin') }}",
+        
+                type:"GET",
+            
+                data:{'nome':query},
+            
+                success:function (data) {
+                
+                    $('#tbodyclientes').html(data);
+                }
+            })
+            // end of ajax call
+        });
+    });
+   </script>
 
+{{--
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
