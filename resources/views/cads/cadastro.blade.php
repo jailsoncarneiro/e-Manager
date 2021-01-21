@@ -21,7 +21,7 @@
             @foreach ($cads as $cad)
                 <tr>
                     <td>{{ $cad->id }}</td>
-                    <td>{{ $cad->usuario }}</td>
+                    <td>{{ $cad->nome . ' (' . $cad->usuario . ')'}}</td>
                     <td>{{ $cad->enderecos->first()['cep'] }}</td>
                     <td>{{ $cad->enderecos->first()['endereco'] }}</td>
                     <td>{{ $cad->enderecos->first()['numero'] }}</td>
