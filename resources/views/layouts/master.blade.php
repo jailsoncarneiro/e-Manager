@@ -77,28 +77,7 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script>
         feather.replace()
-    </script>
-    <script>
-      $(document).ready(function () {
-        $('#inp-search').on('keyup',function() {
-            var query = $(this).val(); 
-            $.ajax({
-            
-                url:"{{ route('man.monsearch', 'admin') }}",
-        
-                type:"GET",
-            
-                data:{'nome':query},
-            
-                success:function (data) {
-                
-                    $('#tbodyclientes').html(data);
-                }
-            })
-            // end of ajax call
-        });
-    });
-   </script>
+    </script>    
 
 {{--
     <!-- Graphs -->
