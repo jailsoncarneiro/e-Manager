@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 */
 
-Route::get('/', function () {
-       return view('welcome');
-});
+Route::get('/', [ProdutoController::class, 'getIndex'])->name('home');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/cads', [CadController::class, 'index'])->name('cads.listall');
