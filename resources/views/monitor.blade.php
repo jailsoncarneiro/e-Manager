@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <h3 class="text-center">Monitor</h3>
+    <h2 class="text-center">Monitor</h2>
     <table class="table table-hover table-striped tbmonitor">
         <thead>
             <tr>
