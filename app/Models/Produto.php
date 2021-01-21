@@ -8,8 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Produto extends Model
 {
    use HasFactory;
+
+   protected $table = 'items';
    
-   protected $fillable = ['foto1', 'descricao_res', 'descricao', 'precovar', 'est'];
+   protected $fillable = ['foto1', 'descricaores', 'descricao'];
   
 //    $orders = Order::with('products')->get();
 
@@ -17,11 +19,11 @@ class Produto extends Model
 
    public function imagens()
     {
-        return $this->hasMany('App\Models\ProdutoImg', 'fk', 'id_produto');
+        return $this->hasMany('App\Models\ProdutoImg', 'fk', 'id');
     }
 
     public function precos()
     {
-        return $this->hasMany('App\Models\ProdutoPrc', 'fk', 'id_produto');
+        return $this->hasMany('App\Models\ProdutoPrc', 'fk', 'id');
     }
 }
