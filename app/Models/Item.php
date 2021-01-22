@@ -12,7 +12,7 @@ class Item extends Model
 //   protected $table = 'items';
    
    protected $fillable = ['descricaores', 'descricao'];
-  
+
 //    $orders = Order::with('products')->get();
 
 //         return view('admin.orders.index', compact('orders'));

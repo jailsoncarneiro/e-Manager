@@ -41,19 +41,19 @@
 						</div>
 						<div class="topbar-menu right-menu">
 							<ul>
-								<li class="menu-item" ><a title="Register or Login" href="login.html">Login</a></li>
-								<li class="menu-item" ><a title="Register or Login" href="register.html">Register</a></li>
+								<li class="menu-item" ><a title="Register or Login" href="{{ url('login') }}">Login</a></li>
+								<li class="menu-item" ><a title="Register or Login" href="{{ url('register') }}">Register</a></li>
 								<li class="menu-item lang-menu menu-item-has-children parent">
 									<a title="English" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="assets/images/lang-hun.png" alt="lang-hun"></span>Hungary</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="assets/images/lang-ger.png" alt="lang-ger" ></span>German</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="assets/images/lang-fra.png" alt="lang-fre"></span>French</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="assets/images/lang-can.png" alt="lang-can"></span>Canada</a></li>
+										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="assets/images/lang-hun.png" alt="lang-hun"></span>Português</a></li>
+										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="assets/images/lang-ger.png" alt="lang-ger" ></span>Alemão</a></li>
+										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="assets/images/lang-fra.png" alt="lang-fre"></span>Francês</a></li>
+										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="assets/images/lang-can.png" alt="lang-can"></span>Inglês</a></li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
-									<a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="Dollar (USD)" href="#">Real (BLR)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
 											<a title="Pound (GBP)" href="#">Pound (GBP)</a>
@@ -62,7 +62,7 @@
 											<a title="Euro (EUR)" href="#">Euro (EUR)</a>
 										</li>
 										<li class="menu-item" >
-											<a title="Dollar (USD)" href="#">Dollar (USD)</a>
+											<a title="Dollar (USD)" href="#">Dolar (USD)</a>
 										</li>
 									</ul>
 								</li>
@@ -85,19 +85,19 @@
 									<button form="form-search-top" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 									<div class="wrap-list-cate">
 										<input type="hidden" name="product-cate" value="0" id="product-cate">
-										<a href="#" class="link-control">All Category</a>
+										<a href="#" class="link-control">Todas as Categorias</a>
 										<ul class="list-cate">
-											<li class="level-0">All Category</li>
-											<li class="level-1">-Electronics</li>
-											<li class="level-2">Batteries & Chargens</li>
-											<li class="level-2">Headphone & Headsets</li>
-											<li class="level-2">Mp3 Player & Acessories</li>
-											<li class="level-1">-Smartphone & Table</li>
-											<li class="level-2">Batteries & Chargens</li>
-											<li class="level-2">Mp3 Player & Headphones</li>
-											<li class="level-2">Table & Accessories</li>
-											<li class="level-1">-Electronics</li>
-											<li class="level-2">Batteries & Chargens</li>
+											<li class="level-0">Todas as Categorias</li>
+											<li class="level-1">-Electrônicos</li>
+											<li class="level-2">Baterias & Carregadores</li>
+											<li class="level-2">Fones de Ouvido & Ajustes de Cabeça</li>
+											<li class="level-2">Mp3 Player & Acessórios</li>
+											<li class="level-1">-Smartphones & Tablets</li>
+											<li class="level-2">Bateries & Charregadores</li>
+											<li class="level-2">Mp3 Player & Fones de Ouvido</li>
+											<li class="level-2">Tablet & Accessórios</li>
+											<li class="level-1">-Electrônicos</li>
+											<li class="level-2">Baterias & Charregadores</li>
 											<li class="level-2">Headphone & Headsets</li>
 											<li class="level-2">Mp3 Player & Acessories</li>
 											<li class="level-1">-Smartphone & Table</li>
@@ -116,7 +116,7 @@
 									<i class="fa fa-heart" aria-hidden="true"></i>
 									<div class="left-info">
 										<span class="index">0 item</span>
-										<span class="title">Wishlist</span>
+										<span class="title">Lista de Desejos</span>
 									</div>
 								</a>
 							</div>
@@ -124,8 +124,8 @@
 								<a href="#" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
-										<span class="index">4 items</span>
-										<span class="title">CART</span>
+										<span class="index">4 ítens</span>
+										<span class="title">CARRINHO</span>
 									</div>
 								</a>
 							</div>
@@ -251,12 +251,12 @@
 									<span class="flash-item sale-label">venda</span>
 								</div>
 								<div class="wrap-btn">
-									<a href="#" class="function-link">Veja</a>
+									<a href="#" class="function-link">Visão Rápida</a>
 								</div>
 							</div>
 							<div class="product-info">
 								<a href="#" class="product-name"><span>{{ $item->descricao }}</span></a>
-								<div class="wrap-price"><span class="product-price">R$ {{ $item->precovar }}</span></div>
+								<div class="wrap-price"><span class="product-price">R$ {{ count($item->precos) > 0 ? $item->precos[0]->preco : '-' }}</span></div>
 							</div>
 						</div>
 						@endforeach
