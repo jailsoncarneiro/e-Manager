@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Produto extends Model
+class Item extends Model
 {
    use HasFactory;
 
-   protected $table = 'items';
+//   protected $table = 'items';
    
-   protected $fillable = ['foto1', 'descricaores', 'descricao'];
+   protected $fillable = ['descricaores', 'descricao'];
   
 //    $orders = Order::with('products')->get();
 
@@ -19,11 +19,11 @@ class Produto extends Model
 
    public function imagens()
     {
-        return $this->hasMany('App\Models\ProdutoImg', 'fk', 'id');
+        return $this->hasMany('App\Models\ItemImg', 'fk', 'id');
     }
 
     public function precos()
     {
-        return $this->hasMany('App\Models\ProdutoPrc', 'fk', 'id');
+        return $this->hasMany('App\Models\ItemPrc', 'fk', 'id');
     }
 }
