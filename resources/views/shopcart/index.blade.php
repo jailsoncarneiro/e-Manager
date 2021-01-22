@@ -35,16 +35,16 @@
 						<div class="topbar-menu left-menu">
 							<ul>
 								<li class="menu-item" >
-									<a title="Hotline: (+123) 456 789" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
+									<a title="Telefone: (+55 21) 3313 5559" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+55 21) 3313 5559</a>
 								</li>
 							</ul>
 						</div>
 						<div class="topbar-menu right-menu">
 							<ul>
 								<li class="menu-item" ><a title="Register or Login" href="{{ url('login') }}">Login</a></li>
-								<li class="menu-item" ><a title="Register or Login" href="{{ url('register') }}">Register</a></li>
+								<li class="menu-item" ><a title="Register or Login" href="{{ url('register') }}">Registrar</a></li>
 								<li class="menu-item lang-menu menu-item-has-children parent">
-									<a title="English" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="Portugês" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>Português<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
 										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="assets/images/lang-hun.png" alt="lang-hun"></span>Português</a></li>
 										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="assets/images/lang-ger.png" alt="lang-ger" ></span>Alemão</a></li>
@@ -53,7 +53,7 @@
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
-									<a title="Dollar (USD)" href="#">Real (BLR)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="Real (BLR)" href="#">Real (BLR)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
 											<a title="Pound (GBP)" href="#">Pound (GBP)</a>
@@ -75,19 +75,19 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="index.html" class="link-to-home"><img src="assets/images/logo-top-1.png" alt="mercado"></a>
+							<a href="{{ url('/') }}" class="link-to-home"><img src="https://paceto.com.br/painel/img/layout/logo/logo.jpg" alt="Paceto"></a>
 						</div>
 
 						<div class="wrap-search center-section">
 							<div class="wrap-search-form">
 								<form action="#" id="form-search-top" name="form-search-top">
-									<input type="text" name="search" value="" placeholder="Search here...">
+									<input type="text" name="search" value="" placeholder="Busca...">
 									<button form="form-search-top" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 									<div class="wrap-list-cate">
 										<input type="hidden" name="product-cate" value="0" id="product-cate">
-										<a href="#" class="link-control">Todas as Categorias</a>
+										<a href="#" class="link-control">Todas</a>
 										<ul class="list-cate">
-											<li class="level-0">Todas as Categorias</li>
+											<li class="level-0">Todas</li>
 											<li class="level-1">-Electrônicos</li>
 											<li class="level-2">Baterias & Carregadores</li>
 											<li class="level-2">Fones de Ouvido & Ajustes de Cabeça</li>
@@ -124,7 +124,7 @@
 								<a href="#" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
-										<span class="index">4 ítens</span>
+										<span class="index">4 itens</span>
 										<span class="title">CARRINHO</span>
 									</div>
 								</a>
