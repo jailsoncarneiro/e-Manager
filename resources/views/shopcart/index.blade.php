@@ -244,8 +244,8 @@
 						@foreach ($items as $item)
 						<div class="product product-style-2 equal-elem ">
 							<div class="product-thumnail">
-								<a href="detail.html" title="{{ $Item->descricaores }}">
-									<figure><img src="{{ count($Item->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $Item->imagens[0]->caminho : 'https://via.placeholder.com/150' }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+								<a href="detail.html" title="{{ $item->descricaores }}">
+									<figure><img src="{{ count($item->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $item->imagens[0]->caminho : 'https://via.placeholder.com/150' }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
 								</a>
 								<div class="group-flash">
 									<span class="flash-item sale-label">venda</span>
@@ -255,8 +255,8 @@
 								</div>
 							</div>
 							<div class="product-info">
-								<a href="#" class="product-name"><span>{{ $Item->descricao }}</span></a>
-								<div class="wrap-price"><span class="product-price">R$ {{ $Item->precovar }}</span></div>
+								<a href="#" class="product-name"><span>{{ $item->descricao }}</span></a>
+								<div class="wrap-price"><span class="product-price">R$ {{ $item->precovar }}</span></div>
 							</div>
 						</div>
 						@endforeach
