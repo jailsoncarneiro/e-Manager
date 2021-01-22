@@ -1,3 +1,8 @@
+****
+Alteração dos campos em massa na tabela velha - conversão pra nova
+ALTER TABLE `produtos` CHANGE `id_produto` `id` BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT, CHANGE `idman` `idman` BIGINT(20) UNSIGNED NOT NULL, CHANGE `id_categoria` `id_cat` BIGINT(20) UNSIGNED NOT NULL, CHANGE `id_subcategoria` `id_subcat` BIGINT(20) UNSIGNED NULL DEFAULT NULL, CHANGE `precocusto` `precocusto` DECIMAL(10,3) UNSIGNED NOT NULL;
+****
+
 Alterações Novo Banco de Dados da Loja
 
 **Chaves Estrangeiras**
