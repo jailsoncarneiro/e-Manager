@@ -145,11 +145,11 @@
 					<div class="header-nav-section">
 						<div class="container">
 							<ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Sale Info" >
-								<li class="menu-item"><a href="#" class="link-term">Weekly Featured</a><span class="nav-label hot-label">hot</span></li>
-								<li class="menu-item"><a href="#" class="link-term">Hot Sale items</a><span class="nav-label hot-label">hot</span></li>
-								<li class="menu-item"><a href="#" class="link-term">Top new items</a><span class="nav-label hot-label">hot</span></li>
-								<li class="menu-item"><a href="#" class="link-term">Top Selling</a><span class="nav-label hot-label">hot</span></li>
-								<li class="menu-item"><a href="#" class="link-term">Top rated items</a><span class="nav-label hot-label">hot</span></li>
+								<li class="menu-item"><a href="#" class="link-term">Destaques Semanais</a><span class="nav-label hot-label">hot</span></li>
+								<li class="menu-item"><a href="#" class="link-term">Top de Vendas</a><span class="nav-label hot-label">hot</span></li>
+								<li class="menu-item"><a href="#" class="link-term">Mais Novos</a><span class="nav-label hot-label">hot</span></li>
+								<li class="menu-item"><a href="#" class="link-term">Mais Vendidos</a><span class="nav-label hot-label">hot</span></li>
+								<li class="menu-item"><a href="#" class="link-term">Melhor Avaliados</a><span class="nav-label hot-label">hot</span></li>
 							</ul>
 						</div>
 					</div>
@@ -161,19 +161,19 @@
 									<a href="index.html" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
 								</li>
 								<li class="menu-item">
-									<a href="about-us.html" class="link-term mercado-item-title">About Us</a>
+									<a href="about-us.html" class="link-term mercado-item-title">Sobre Nós</a>
 								</li>
 								<li class="menu-item">
-									<a href="shop.html" class="link-term mercado-item-title">Shop</a>
+									<a href="shop.html" class="link-term mercado-item-title">Comprar</a>
 								</li>
 								<li class="menu-item">
-									<a href="cart.html" class="link-term mercado-item-title">Cart</a>
+									<a href="cart.html" class="link-term mercado-item-title">Carrinho</a>
 								</li>
 								<li class="menu-item">
-									<a href="checkout.html" class="link-term mercado-item-title">Checkout</a>
+									<a href="checkout.html" class="link-term mercado-item-title">Finalizar Compra</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
+									<a href="contact-us.html" class="link-term mercado-item-title">Fale Conosco</a>
 								</li>																	
 							</ul>
 						</div>
@@ -266,7 +266,7 @@
 
 			<!--Latest Products-->
 			<div class="wrap-show-advance-info-box style-1">
-				<h3 class="title-box">Latest Products</h3>
+				<h3 class="title-box">Últimos Produtos</h3>
 				<div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="assets/images/digital-electronic-banner.jpg" width="1170" height="240" alt=""></figure>
@@ -429,7 +429,7 @@
 
 			<!--Product Categories-->
 			<div class="wrap-show-advance-info-box style-1">
-				<h3 class="title-box">Product Categories</h3>
+				<h3 class="title-box">Categorias de Produto</h3>
 				<div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="assets/images/fashion-accesories-banner.jpg" width="1170" height="240" alt=""></figure>
@@ -1109,32 +1109,32 @@
 						<li class="fc-info-item">
 							<i class="fa fa-truck" aria-hidden="true"></i>
 							<div class="wrap-left-info">
-								<h4 class="fc-name">Free Shipping</h4>
-								<p class="fc-desc">Free On Oder Over $99</p>
+								<h4 class="fc-name">Não Fazemos Entrega</h4>
+								<p class="fc-desc">Atendimento Balcão</p>
 							</div>
 
 						</li>
 						<li class="fc-info-item">
 							<i class="fa fa-recycle" aria-hidden="true"></i>
 							<div class="wrap-left-info">
-								<h4 class="fc-name">Guarantee</h4>
-								<p class="fc-desc">30 Days Money Back</p>
+								<h4 class="fc-name">Garantia</h4>
+								<p class="fc-desc">30 Dias ou Dinheiro de Volta</p>
 							</div>
 
 						</li>
 						<li class="fc-info-item">
 							<i class="fa fa-credit-card-alt" aria-hidden="true"></i>
 							<div class="wrap-left-info">
-								<h4 class="fc-name">Safe Payment</h4>
-								<p class="fc-desc">Safe your online payment</p>
+								<h4 class="fc-name">Pagamento Seguro</h4>
+								<p class="fc-desc">Seu pagamento online é feito de forma segura</p>
 							</div>
 
 						</li>
 						<li class="fc-info-item">
 							<i class="fa fa-life-ring" aria-hidden="true"></i>
 							<div class="wrap-left-info">
-								<h4 class="fc-name">Online Suport</h4>
-								<p class="fc-desc">We Have Support 24/7</p>
+								<h4 class="fc-name">Suporte Online</h4>
+								<p class="fc-desc">Temos Suporte 24/7</p>
 							</div>
 
 						</li>
@@ -1151,21 +1151,21 @@
 
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
-								<h3 class="item-header">Contact Details</h3>
+								<h3 class="item-header">Detalhes de Contato</h3>
 								<div class="item-content">
 									<div class="wrap-contact-detail">
 										<ul>
 											<li>
 												<i class="fa fa-map-marker" aria-hidden="true"></i>
-												<p class="contact-txt">45 Grand Central Terminal New York,NY 1017 United State USA</p>
+												<p class="contact-txt">Rua Sérgio Macedo, 35, Paciência, Rio de Janeiro, RJ, Brasil - CEP 23585-086</p>
 											</li>
 											<li>
 												<i class="fa fa-phone" aria-hidden="true"></i>
-												<p class="contact-txt">(+123) 456 789 - (+123) 666 888</p>
+												<p class="contact-txt">(+55 21) 3313 5559 - (+55 21) 98281 8182</p>
 											</li>
 											<li>
 												<i class="fa fa-envelope" aria-hidden="true"></i>
-												<p class="contact-txt">Contact@yourcompany.com</p>
+												<p class="contact-txt">contato@pacetosoftware.com.br</p>
 											</li>											
 										</ul>
 									</div>
@@ -1176,22 +1176,22 @@
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 
 							<div class="wrap-footer-item">
-								<h3 class="item-header">Hot Line</h3>
+								<h3 class="item-header">Telefones</h3>
 								<div class="item-content">
 									<div class="wrap-hotline-footer">
-										<span class="desc">Call Us toll Free</span>
-										<b class="phone-number">(+123) 456 789 - (+123) 666 888</b>
+										<span class="desc">Ligue-nos</span>
+										<b class="phone-number">(+55 21) 3313 5559 - (+55 21) 98281-8182</b>
 									</div>
 								</div>
 							</div>
 
 							<div class="wrap-footer-item footer-item-second">
-								<h3 class="item-header">Sign up for newsletter</h3>
+								<h3 class="item-header">Assine Nossa Revista de Notícias</h3>
 								<div class="item-content">
 									<div class="wrap-newletter-footer">
 										<form action="#" class="frm-newletter" id="frm-newletter">
 											<input type="email" class="input-email" name="email" value="" placeholder="Enter your email address">
-											<button class="btn-submit">Subscribe</button>
+											<button class="btn-submit">Inscrever-se</button>
 										</form>
 									</div>
 								</div>
@@ -1202,29 +1202,29 @@
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 box-twin-content ">
 							<div class="row">
 								<div class="wrap-footer-item twin-item">
-									<h3 class="item-header">My Account</h3>
+									<h3 class="item-header">Minha Conta</h3>
 									<div class="item-content">
 										<div class="wrap-vertical-nav">
 											<ul>
-												<li class="menu-item"><a href="#" class="link-term">My Account</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Brands</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Gift Certificates</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Affiliates</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Wish list</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Minha Conta</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Marcas</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Certificados de Presentes</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Afiliados</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Lista de Desejos</a></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 								<div class="wrap-footer-item twin-item">
-									<h3 class="item-header">Infomation</h3>
+									<h3 class="item-header">Informações</h3>
 									<div class="item-content">
 										<div class="wrap-vertical-nav">
 											<ul>
-												<li class="menu-item"><a href="#" class="link-term">Contact Us</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Returns</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Site Map</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Specials</a></li>
-												<li class="menu-item"><a href="#" class="link-term">Order History</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Fale Conosco</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Devoluções</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Mapa do Site</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Especiais</a></li>
+												<li class="menu-item"><a href="#" class="link-term">Histórico de Pedidos</a></li>
 											</ul>
 										</div>
 									</div>
@@ -1238,7 +1238,7 @@
 
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
-								<h3 class="item-header">We Using Safe Payments:</h3>
+								<h3 class="item-header">Nós utilizamos pagamentos seguros:</h3>
 								<div class="item-content">
 									<div class="wrap-list-item wrap-gallery">
 										<img src="assets/images/payment.png" style="max-width: 260px;">
@@ -1249,7 +1249,7 @@
 
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
-								<h3 class="item-header">Social network</h3>
+								<h3 class="item-header">Redes Sociais</h3>
 								<div class="item-content">
 									<div class="wrap-list-item social-network">
 										<ul>
@@ -1266,7 +1266,7 @@
 
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
-								<h3 class="item-header">Dowload App</h3>
+								<h3 class="item-header">Baixar App</h3>
 								<div class="item-content">
 									<div class="wrap-list-item apps-list">
 										<ul>
@@ -1284,10 +1284,10 @@
 				<div class="wrap-back-link">
 					<div class="container">
 						<div class="back-link-box">
-							<h3 class="backlink-title">Quick Links</h3>
+							<h3 class="backlink-title">Links Rápidos</h3>
 							<div class="back-link-row">
 								<ul class="list-back-link" >
-									<li><span class="row-title">Mobiles:</span></li>
+									<li><span class="row-title">Móveis:</span></li>
 									<li><a href="#" class="redirect-back-link" title="mobile">Mobiles</a></li>
 									<li><a href="#" class="redirect-back-link" title="yphones">YPhones</a></li>
 									<li><a href="#" class="redirect-back-link" title="Gianee Mobiles GL">Gianee Mobiles GL</a></li>
@@ -1314,7 +1314,7 @@
 								</ul>
 
 								<ul class="list-back-link" >
-									<li><span class="row-title">Fashion:</span></li>
+									<li><span class="row-title">Moda:</span></li>
 									<li><a href="#" class="redirect-back-link" title="Sarees Silk" >Sarees Silk</a></li>
 									<li><a href="#" class="redirect-back-link" title="sarees Salwar" >sarees Salwar</a></li>
 									<li><a href="#" class="redirect-back-link" title="Suits Lehengas" >Suits Lehengas</a></li>
@@ -1336,15 +1336,15 @@
 			<div class="coppy-right-box">
 				<div class="container">
 					<div class="coppy-right-item item-left">
-						<p class="coppy-right-text">Copyright © 2020 Surfside Media. All rights reserved</p>
+						<p class="coppy-right-text">Copyright © 2021 Paceto Software. Todos os Direitos Reservados</p>
 					</div>
 					<div class="coppy-right-item item-right">
 						<div class="wrap-nav horizontal-nav">
 							<ul>
-								<li class="menu-item"><a href="about-us.html" class="link-term">About us</a></li>								
-								<li class="menu-item"><a href="privacy-policy.html" class="link-term">Privacy Policy</a></li>
-								<li class="menu-item"><a href="terms-conditions.html" class="link-term">Terms & Conditions</a></li>
-								<li class="menu-item"><a href="return-policy.html" class="link-term">Return Policy</a></li>								
+								<li class="menu-item"><a href="about-us.html" class="link-term">Sobre Nós</a></li>								
+								<li class="menu-item"><a href="privacy-policy.html" class="link-term">Política de Privacidade</a></li>
+								<li class="menu-item"><a href="terms-conditions.html" class="link-term">Termos & Condições</a></li>
+								<li class="menu-item"><a href="return-policy.html" class="link-term">Política de Devolução</a></li>								
 							</ul>
 						</div>
 					</div>
