@@ -240,12 +240,12 @@
 				<div class="wrap-countdown mercado-countdown" data-expire="2020/12/12 12:34:56"></div>
 				<div class="wrap-products slide-carousel owl-carousel style-nav-1 equal-container " data-items="5" data-loop="false" data-nav="true" data-dots="false" data-responsive='{"0":{"items":"1"},"480":{"items":"2"},"768":{"items":"3"},"992":{"items":"4"},"1200":{"items":"5"}}'>
 
-					@if (count($produtos) > 0)
-						@foreach ($produtos as $produto)
+					@if (count($items) > 0)
+						@foreach ($Items as $item)
 						<div class="product product-style-2 equal-elem ">
 							<div class="product-thumnail">
-								<a href="detail.html" title="{{ $produto->descricaores }}">
-									<figure><img src="{{ count($produto->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $produto->imagens[0]->caminho : 'https://via.placeholder.com/150' }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+								<a href="detail.html" title="{{ $Item->descricaores }}">
+									<figure><img src="{{ count($Item->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $Item->imagens[0]->caminho : 'https://via.placeholder.com/150' }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
 								</a>
 								<div class="group-flash">
 									<span class="flash-item sale-label">venda</span>
@@ -255,8 +255,8 @@
 								</div>
 							</div>
 							<div class="product-info">
-								<a href="#" class="product-name"><span>{{ $produto->descricao }}</span></a>
-								<div class="wrap-price"><span class="product-price">R$ {{ $produto->precovar }}</span></div>
+								<a href="#" class="product-name"><span>{{ $Item->descricao }}</span></a>
+								<div class="wrap-price"><span class="product-price">R$ {{ $Item->precovar }}</span></div>
 							</div>
 						</div>
 						@endforeach
