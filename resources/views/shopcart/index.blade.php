@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>	
+	<title>Paceto Software</title>	
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
@@ -35,34 +35,34 @@
 						<div class="topbar-menu left-menu">
 							<ul>
 								<li class="menu-item" >
-									<a title="Telefone: (+55 21) 3313 5559" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+55 21) 3313 5559</a>
+									<a title="Telefone: (+55 21) 3313 5559" href="#" ><span class="icon label-before fa fa-mobile"></span>Telefones: (+55 21) 3313 5559 - (+55 21) 98281-8182</a>
 								</li>
 							</ul>
 						</div>
 						<div class="topbar-menu right-menu">
 							<ul>
-								<li class="menu-item" ><a title="Register or Login" href="{{ url('login') }}">Login</a></li>
-								<li class="menu-item" ><a title="Register or Login" href="{{ url('register') }}">Registrar</a></li>
+								<li class="menu-item" ><a title="Fazer Login" href="{{ url('login') }}">Login</a></li>
+								<li class="menu-item" ><a title="Registrar-se" href="{{ url('register') }}">Registrar</a></li>
 								<li class="menu-item lang-menu menu-item-has-children parent">
-									<a title="Portugês" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>Português<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="Português" href="#"><span class="img label-before"><img src="assets/images/lang-bra.png" alt="lang-en"></span>Português<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="assets/images/lang-hun.png" alt="lang-hun"></span>Português</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="assets/images/lang-ger.png" alt="lang-ger" ></span>Alemão</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="assets/images/lang-fra.png" alt="lang-fre"></span>Francês</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="assets/images/lang-can.png" alt="lang-can"></span>Inglês</a></li>
+										<li class="menu-item" ><a title="Português" href="#"><span class="img label-before"><img src="assets/images/lang-bra.png" alt="lang-bra"></span>Português</a></li>
+										<li class="menu-item" ><a title="Inglês" href="#"><span class="img label-before"><img src="assets/images/lang-can.png" alt="lang-can"></span>Inglês</a></li>
+										<li class="menu-item" ><a title="Francês" href="#"><span class="img label-before"><img src="assets/images/lang-fra.png" alt="lang-fre"></span>Francês</a></li>
+										<li class="menu-item" ><a title="Alemão" href="#"><span class="img label-before"><img src="assets/images/lang-ger.png" alt="lang-ger" ></span>Alemão</a></li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
 									<a title="Real (BLR)" href="#">Real (BLR)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
 										<li class="menu-item" >
-											<a title="Pound (GBP)" href="#">Pound (GBP)</a>
-										</li>
-										<li class="menu-item" >
 											<a title="Euro (EUR)" href="#">Euro (EUR)</a>
 										</li>
 										<li class="menu-item" >
-											<a title="Dollar (USD)" href="#">Dolar (USD)</a>
+											<a title="Dólar (USD)" href="#">Dólar (USD)</a>
+										</li>
+										<li class="menu-item" >
+											<a title="Pound (GBP)" href="#">Libra Esterlina (GBP)</a>
 										</li>
 									</ul>
 								</li>
@@ -88,22 +88,48 @@
 										<a href="#" class="link-control">Todas</a>
 										<ul class="list-cate">
 											<li class="level-0">Todas</li>
-											<li class="level-1">-Electrônicos</li>
-											<li class="level-2">Baterias & Carregadores</li>
-											<li class="level-2">Fones de Ouvido & Ajustes de Cabeça</li>
-											<li class="level-2">Mp3 Player & Acessórios</li>
-											<li class="level-1">-Smartphones & Tablets</li>
-											<li class="level-2">Bateries & Charregadores</li>
-											<li class="level-2">Mp3 Player & Fones de Ouvido</li>
-											<li class="level-2">Tablet & Accessórios</li>
-											<li class="level-1">-Electrônicos</li>
-											<li class="level-2">Baterias & Charregadores</li>
-											<li class="level-2">Headphone & Headsets</li>
-											<li class="level-2">Mp3 Player & Acessories</li>
-											<li class="level-1">-Smartphone & Table</li>
-											<li class="level-2">Batteries & Chargens</li>
-											<li class="level-2">Mp3 Player & Headphones</li>
-											<li class="level-2">Table & Accessories</li>
+											<li class="level-1">-Sistemas Locais</li>
+											<li class="level-2">Comércio e Prestação de Serviços</li>
+											<li class="level-2">Locação de Roupas</li>
+											<li class="level-2">Oficinas Mecânicas</li>
+											<li class="level-2">Clínicas</li>
+											<li class="level-2">Clínicas Veterinárias</li>
+											<li class="level-2">Obras / Engenharia</li>
+											<li class="level-2">Máquinas de Jogos (Sinuca, Fliperama e Caça Níqueis)</li>
+											<li class="level-2">Representações de Roupas e Calçados</li>
+											<li class="level-1">-Sistemas Online</li>
+											<li class="level-2">Comércio e Prestação de Serviços</li>
+											<li class="level-2">Locação de Roupas</li>
+											<li class="level-2">Oficinas Mecânicas</li>
+											<li class="level-2">Clínicas</li>
+											<li class="level-2">Clínicas Veterinárias</li>
+											<li class="level-2">Obras / Engenharia</li>
+											<li class="level-2">Máquinas de Jogos (Sinuca, Fliperama e Caça Níqueis)</li>
+											<li class="level-2">Representações de Roupas e Calçados</li>
+											<li class="level-2">Eventos</li>
+											<li class="level-1">-Aplicativos Android e iOS</li>
+											<li class="level-2">Comércio e Prestação de Serviços</li>
+											<li class="level-2">Locação de Roupas</li>
+											<li class="level-2">Oficinas Mecânicas</li>
+											<li class="level-2">Clínicas</li>
+											<li class="level-2">Clínicas Veterinárias</li>
+											<li class="level-2">Obras / Engenharia</li>
+											<li class="level-2">Máquinas de Jogos (Sinuca, Fliperama e Caça Níqueis)</li>
+											<li class="level-2">Representações de Roupas e Calçados</li>
+											<li class="level-2">Eventos</li>
+											<li class="level-1">-Sites</li>
+											<li class="level-2">Loja Virtual / E-Commerce</li>
+											<li class="level-2">Institucional</li>
+											<li class="level-2">One Page</li>
+											<li class="level-2">Blog</li>
+											<li class="level-2">Dinâmico</li>
+											<li class="level-2">Hot Site</li>
+											<li class="level-2">Landing Page</li>
+											<li class="level-1">-Hospedagem</li>
+											<li class="level-2">Básica</li>
+											<li class="level-2">Avançada</li>
+											<li class="level-2">Expert</li>
+											<li class="level-2">Revenda</li>
 										</ul>
 									</div>
 								</form>
@@ -144,9 +170,8 @@
 				<div class="nav-section header-sticky">
 					<div class="header-nav-section">
 						<div class="container">
-							<ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Sale Info" >
-								<li class="menu-item"><a href="#" class="link-term">Destaques Semanais</a><span class="nav-label hot-label">hot</span></li>
-								<li class="menu-item"><a href="#" class="link-term">Top de Vendas</a><span class="nav-label hot-label">hot</span></li>
+							<ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Informações de Venda" >
+								<li class="menu-item"><a href="#" class="link-term">Destaques</a><span class="nav-label hot-label">hot</span></li>
 								<li class="menu-item"><a href="#" class="link-term">Mais Novos</a><span class="nav-label hot-label">hot</span></li>
 								<li class="menu-item"><a href="#" class="link-term">Mais Vendidos</a><span class="nav-label hot-label">hot</span></li>
 								<li class="menu-item"><a href="#" class="link-term">Melhor Avaliados</a><span class="nav-label hot-label">hot</span></li>
@@ -158,22 +183,22 @@
 						<div class="container">
 							<ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
 								<li class="menu-item home-icon">
-									<a href="index.html" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+									<a href="{{ url('/') }}" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
 								</li>
 								<li class="menu-item">
-									<a href="about-us.html" class="link-term mercado-item-title">Sobre Nós</a>
+									<a href="{{ url('about-us') }}" class="link-term mercado-item-title">Sobre Nós</a>
 								</li>
 								<li class="menu-item">
-									<a href="shop.html" class="link-term mercado-item-title">Comprar</a>
+									<a href="{{ url('shop') }}" class="link-term mercado-item-title">Comprar</a>
 								</li>
 								<li class="menu-item">
-									<a href="cart.html" class="link-term mercado-item-title">Carrinho</a>
+									<a href="{{ url('cart') }}" class="link-term mercado-item-title">Carrinho</a>
 								</li>
 								<li class="menu-item">
-									<a href="checkout.html" class="link-term mercado-item-title">Finalizar Compra</a>
+									<a href="{{ url('checkout') }}" class="link-term mercado-item-title">Finalizar Compra</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact-us.html" class="link-term mercado-item-title">Fale Conosco</a>
+									<a href="{{ url('contact-us') }}" class="link-term mercado-item-title">Fale Conosco</a>
 								</li>																	
 							</ul>
 						</div>
@@ -190,22 +215,22 @@
 			<div class="wrap-main-slide">
 				<div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
 					<div class="item-slide">
-						<img src="assets/images/main-slider-1-1.jpg" alt="" class="img-slide">
+						<img src="{{ asset('assets/images/manager/slide1.jpg') }}" alt="" class="img-slide">
 						<div class="slide-info slide-1">
-							<h2 class="f-title">Kid Smart <b>Watches</b></h2>
-							<span class="subtitle">Compra todos tus productos Smart por internet.</span>
-							<p class="sale-info">Only price: <span class="price">$59.99</span></p>
-							<a href="#" class="btn-link">Shop Now</a>
+							<h2 class="f-title">TGC <b>Manager</b></h2>
+							<span class="subtitle">Sistema de Gerenciamento de Comércio e Prestação de Serviço, Clínicas, Obras e outros.</span>
+							<p class="sale-info">Preço: <span class="price">$55.00 / mês</span></p>
+							<a href="#" class="btn-link">Comprar</a>
 						</div>
 					</div>
 					<div class="item-slide">
 						<img src="assets/images/main-slider-1-2.jpg" alt="" class="img-slide">
 						<div class="slide-info slide-2">
-							<h2 class="f-title">Extra 25% Off</h2>
-							<span class="f-subtitle">On online payments</span>
-							<p class="discount-code">Use Code: #FA6868</p>
-							<h4 class="s-title">Get Free</h4>
-							<p class="s-subtitle">TRansparent Bra Straps</p>
+							<h2 class="f-title">25% de Desconto</h2>
+							<span class="f-subtitle">Nos pagamentos online</span>
+							<p class="discount-code">Utilize o Código: #FA6868</p>
+							<h4 class="s-title">Grátis</h4>
+							<p class="s-subtitle">Backup em Nuvem</p>
 						</div>
 					</div>
 					<div class="item-slide">
@@ -237,15 +262,15 @@
 			<!--On Sale-->
 			<div class="wrap-show-advance-info-box style-1 has-countdown">
 				<h3 class="title-box">A Venda</h3>
-				<div class="wrap-countdown mercado-countdown" data-expire="2020/12/12 12:34:56"></div>
+				<div class="wrap-countdown mercado-countdown" data-expire="2021/01/20 12:00:00"></div>
 				<div class="wrap-products slide-carousel owl-carousel style-nav-1 equal-container " data-items="5" data-loop="false" data-nav="true" data-dots="false" data-responsive='{"0":{"items":"1"},"480":{"items":"2"},"768":{"items":"3"},"992":{"items":"4"},"1200":{"items":"5"}}'>
 
 					@if (count($items) > 0)
 						@foreach ($items as $item)
 						<div class="product product-style-2 equal-elem ">
 							<div class="product-thumnail">
-								<a href="detail.html" title="{{ $item->descricaores }}">
-									<figure><img src="{{ count($item->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $item->imagens[0]->caminho : 'https://via.placeholder.com/150' }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+								<a href="{{ url('detail') }}" title="{{ $item->descricaores }}">
+									<figure><img src="{{ count($item->imagens) > 0 ? 'https://paceto.com.br/painel/img/produtos/' . $item->imagens[0]->caminho : 'https://via.placeholder.com/800x800' }}" width="800" height="800" alt="{{ $item->descricaores }}"></figure>
 								</a>
 								<div class="group-flash">
 									<span class="flash-item sale-label">venda</span>
@@ -439,9 +464,9 @@
 					<div class="wrap-product-tab tab-style-1">
 						<div class="tab-control">
 							<a href="#fashion_1a" class="tab-control-item active">Smartphone</a>
-							<a href="#fashion_1b" class="tab-control-item">Watch</a>
-							<a href="#fashion_1c" class="tab-control-item">Laptop</a>
+							<a href="#fashion_1c" class="tab-control-item">Notebook</a>
 							<a href="#fashion_1d" class="tab-control-item">Tablet</a>
+							<a href="#fashion_1b" class="tab-control-item">Relógio</a>
 						</div>
 						<div class="tab-contents">
 
@@ -1190,7 +1215,7 @@
 								<div class="item-content">
 									<div class="wrap-newletter-footer">
 										<form action="#" class="frm-newletter" id="frm-newletter">
-											<input type="email" class="input-email" name="email" value="" placeholder="Enter your email address">
+											<input type="email" class="input-email" name="email" value="" placeholder="Digite seu endereço de e-mail">
 											<button class="btn-submit">Inscrever-se</button>
 										</form>
 									</div>
@@ -1270,8 +1295,8 @@
 								<div class="item-content">
 									<div class="wrap-list-item apps-list">
 										<ul>
-											<li><a href="#" class="link-to-item" title="our application on apple store"><figure><img src="assets/images/brands/apple-store.png" alt="apple store" width="128" height="36"></figure></a></li>
-											<li><a href="#" class="link-to-item" title="our application on google play store"><figure><img src="assets/images/brands/google-play-store.png" alt="google play store" width="128" height="36"></figure></a></li>
+											<li><a href="#" class="link-to-item" title="Nosso aplicativo na Apple Store"><figure><img src="assets/images/brands/apple-store.png" alt="Apple Store" width="128" height="36"></figure></a></li>
+											<li><a href="#" class="link-to-item" title="Nosso aplicativo na Google Play Store"><figure><img src="assets/images/brands/google-play-store.png" alt="Google Play Store" width="128" height="36"></figure></a></li>
 										</ul>
 									</div>
 								</div>
@@ -1287,17 +1312,9 @@
 							<h3 class="backlink-title">Links Rápidos</h3>
 							<div class="back-link-row">
 								<ul class="list-back-link" >
-									<li><span class="row-title">Móveis:</span></li>
-									<li><a href="#" class="redirect-back-link" title="mobile">Mobiles</a></li>
-									<li><a href="#" class="redirect-back-link" title="yphones">YPhones</a></li>
-									<li><a href="#" class="redirect-back-link" title="Gianee Mobiles GL">Gianee Mobiles GL</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Karbonn">Mobiles Karbonn</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Viva">Mobiles Viva</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Intex">Mobiles Intex</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Micrumex">Mobiles Micrumex</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Bsus">Mobiles Bsus</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Samsyng">Mobiles Samsyng</a></li>
-									<li><a href="#" class="redirect-back-link" title="Mobiles Lenova">Mobiles Lenova</a></li>
+									<li><span class="row-title">Smartphones:</span></li>
+									<li><a href="#" class="redirect-back-link" title="Samsung">Samsung</a></li>
+									<li><a href="#" class="redirect-back-link" title="iphones">iPhone</a></li>
 								</ul>
 
 								<ul class="list-back-link" >
@@ -1315,15 +1332,15 @@
 
 								<ul class="list-back-link" >
 									<li><span class="row-title">Moda:</span></li>
-									<li><a href="#" class="redirect-back-link" title="Sarees Silk" >Sarees Silk</a></li>
+									<li><a href="#" class="redirect-back-link" title="Seda Sarees" >Seda Sarees</a></li>
 									<li><a href="#" class="redirect-back-link" title="sarees Salwar" >sarees Salwar</a></li>
-									<li><a href="#" class="redirect-back-link" title="Suits Lehengas" >Suits Lehengas</a></li>
-									<li><a href="#" class="redirect-back-link" title="Biba Jewellery" >Biba Jewellery</a></li>
-									<li><a href="#" class="redirect-back-link" title="Rings Earrings" >Rings Earrings</a></li>
-									<li><a href="#" class="redirect-back-link" title="Diamond Rings" >Diamond Rings</a></li>
-									<li><a href="#" class="redirect-back-link" title="Loose Diamond Shoes" >Loose Diamond Shoes</a></li>
-									<li><a href="#" class="redirect-back-link" title="BootsMen Watches" >BootsMen Watches</a></li>
-									<li><a href="#" class="redirect-back-link" title="Women Watches" >Women Watches</a></li>
+									<li><a href="#" class="redirect-back-link" title="Ternos Lehengas" >Ternos Lehengas</a></li>
+									<li><a href="#" class="redirect-back-link" title="Joalheria Biba" >Biba Jewellery</a></li>
+									<li><a href="#" class="redirect-back-link" title="Brincos Anéis" >Brincos Anéis</a></li>
+									<li><a href="#" class="redirect-back-link" title="Diamond Rings" >Brincos de Diamante</a></li>
+									<li><a href="#" class="redirect-back-link" title="Sapatilhas de Diamante" >Sapatilhas de Diamante</a></li>
+									<li><a href="#" class="redirect-back-link" title="Relógios BootsMen" >Relógios BootsMen</a></li>
+									<li><a href="#" class="redirect-back-link" title="Relógios Femininos" >Relógios Femininos</a></li>
 								</ul>
 
 							</div>
