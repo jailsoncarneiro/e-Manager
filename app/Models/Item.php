@@ -19,11 +19,11 @@ class Item extends Model
 
    public function imagens()
     {
-        return $this->hasMany('App\Models\ItemImg', 'fk', 'id');
+        return $this->hasMany('App\Models\ItemsImg', 'fk', 'id');
     }
 
     public function precos()
     {
-        return $this->hasMany('App\Models\ItemPrc', 'fk', 'id');
+        return $this->hasMany('App\Models\ItemsPrc', 'fk', 'id');
     }
 }
