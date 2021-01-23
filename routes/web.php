@@ -3,6 +3,7 @@
 use App\Http\Controllers\CadController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\Api\ManController;
+use App\Http\Controllers\ComprasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ItemController::class, 'getIndex'])->name('home');
 
-Route::get('/compras/{user}', function ($user) {
-    return "<center><h1>Olá Sr(a). $user!</center></h1><br><br><p>Aqui é sua área de Fornecimento de Produtos para a Paceto</p><p>Abaixo a relação de itens que deverá preencher com as quantidades que irá fornecer. Ao finalizar clique no botão Salvar. Para confirmar o envio clique em Enviar blablaba:</p>";
-})->name('compras');
+Route::get('/compras/{user}', [ComprasController::class, 'getIndex'])->name('compras');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/cads', [CadController::class, 'index'])->name('cads.listall');
